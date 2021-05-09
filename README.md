@@ -32,6 +32,15 @@ wsl --import ubuntu c:\wsl\php\ubuntu.tar --version 2
 <br />
 
 
+#### <img alt="Windows Subsystem Linux" src="https://img.shields.io/badge/WSL-blueviolet"> Apache Start ####
+
+> service apache2 start
+
+---
+<br />
+
+
+
 #### <img alt="Windows Subsystem Linux" src="https://img.shields.io/badge/WSL-blueviolet"> Apache Auto Startup ####
 
 > zs
