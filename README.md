@@ -70,5 +70,26 @@ Add `service apache2 start` in .zshrc file
 ---
 <br />
 
+#### <img alt="Windows Subsystem Linux" src="https://img.shields.io/badge/WSL-blueviolet"> Composer Install ####
+
+```bash
+sudo apt install php-cli unzip
+
+cd && curl -sS https://getcomposer.org/installer -o composer-setup.php
+
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+HASH=`curl -sS https://composer.github.io/installer.sig`
+
+```
+
+* Allow root 
+> export COMPOSER_ALLOW_SUPERUSER=1
+
+---
+<br />
+
 #### <img src="https://img.shields.io/badge/PWS-blue"> Show Windows Port 80 ####
 > netstat ano | findstr :80
