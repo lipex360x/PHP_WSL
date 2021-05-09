@@ -7,6 +7,9 @@
 ---
 <br />
 
+Create PHP Path and Move WSL Pre Configured
+
+> ubuntu.tar
 
 #### <img src="https://img.shields.io/badge/PWS-blue"> Import WSL Image ####
 
