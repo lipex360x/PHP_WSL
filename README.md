@@ -17,7 +17,7 @@
 #### <img src="https://img.shields.io/badge/PWS-blue"> Import WSL Image ####
 
 ```sh
-wsl --import ubuntu c:\wsl\php\ubuntu.tar --version 2
+wsl --import ubuntu c:\wsl\php c:\wsl\php\ubuntu.tar --version 2
 ```
 
 ---
