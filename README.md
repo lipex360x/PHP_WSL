@@ -9,7 +9,7 @@
 
 #### <img src="https://img.shields.io/badge/PWS-blue"> Create PHP Path and Move WSL Pre Configured ###
 
-> Move-Item -Path $home\Downloads\ubuntu.tar -Destination c:\wsl\php
+> mkdir c:\wsl\php ; Move-Item -Path $home\Downloads\ubuntu.tar -Destination c:\wsl\php
 
 ---
 <br />
