@@ -28,7 +28,7 @@ wsl --import ubuntu c:\wsl\php c:\wsl\php\ubuntu.tar --version 2
 
 #### <img alt="Windows Subsystem Linux" src="https://img.shields.io/badge/WSL-blueviolet"> PHP Apache Install ####
 
-> apt install apache2 php libapache2-mod-php php-mysql -y
+> apt install apache2 php php-gd php-imagick libapache2-mod-php php-mysql -y
 
 ---
 <br />
