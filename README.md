@@ -1,20 +1,23 @@
 #### <img src="https://img.shields.io/badge/PWS-blue"> <img alt="Windows Subsystem Linux" src="https://img.shields.io/badge/WSL-blueviolet"> Initial Config ####
 
-[Click Here](https://gist.github.com/lipex360x/7825fe10c297f54c2b32d7ec26b536b1) to configure WSL
+[Click Here](https://gist.github.com/lipex360x/7825fe10c297f54c2b32d7ec26b536b1) to configure WSL, Windows Terminal, Docker and Docker Compose
 
 [Download](https://1drv.ms/u/s!AqYs4J3iWwfnpN8qvmtiKG1Iy_2D5w?e=8V12sD) Ubuntu 20.04 WSL Pre Configured
 
 ---
 <br />
 
-Create PHP Path and Move WSL Pre Configured
+#### <img src="https://img.shields.io/badge/PWS-blue"> Create PHP Path and Move WSL Pre Configured ###
 
-> ubuntu.tar
+> Move-Item -Path $home\Downloads\ubuntu.tar -Destination c:\wsl\php
+
+---
+<br />
 
 #### <img src="https://img.shields.io/badge/PWS-blue"> Import WSL Image ####
 
 ```sh
-wsl --import <DISTRO_NAME> <FOLDER_DESTINATION [exp: c:\wsl]> .<FILE_PATH>\ubuntu.gz --version 2
+wsl --import ubuntu c:\wsl\php\ubuntu.tar --version 2
 ```
 
 ---
