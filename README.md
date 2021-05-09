@@ -55,7 +55,7 @@ Add `service apache2 start` in .zshrc file
 
 #### <img alt="Windows Subsystem Linux" src="https://img.shields.io/badge/WSL-blueviolet"> Set DEV Path ####
 
-> rm -rf /var/www/html && cd /mnt/c/wsl/php && git clone https://github.com/lipex360x/PHP_WSL.git html && ln -s /mnt/c/wsl/php/html /var/www/html && rm -rf www && ln -s /var/www/html ~/www && cd ~/www
+> rm -rf /var/www/html && cd /var/www && git clone https://github.com/lipex360x/PHP_WSL.git html && rm -rf ~/www && ln -s /var/www/html ~/www && cd ~/www
 
 ---
 <br />
