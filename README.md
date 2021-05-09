@@ -19,7 +19,9 @@
 ```sh
 wsl --import ubuntu c:\wsl\php c:\wsl\php\ubuntu.tar --version 2
 ```
+* Start WSL from Windows Terminal
 
+* Start Docker Desktop (WSL Integration)
 ---
 <br />
 
@@ -53,14 +55,7 @@ Add `service apache2 start` in .zshrc file
 
 #### <img alt="Windows Subsystem Linux" src="https://img.shields.io/badge/WSL-blueviolet"> Set DEV Path ####
 
-> rm -rf /var/www/html && ln -s /mnt/c/wsl/php /var/www/html && rm -rf www && ln -s /var/www/html ~/www
-
----
-<br />
-
-#### <img alt="Windows Subsystem Linux" src="https://img.shields.io/badge/WSL-blueviolet"> Clone PHP Directory ####
-
-> cd ~/www && git clone https://github.com/lipex360x/PHP_WSL.git .
+> rm -rf /var/www/html && cd /mnt/c/wsl/php && git clone https://github.com/lipex360x/PHP_WSL.git html && ln -s /mnt/c/wsl/php/html /var/www/html && rm -rf www && ln -s /var/www/html ~/www && cd ~/www
 
 ---
 <br />
@@ -71,3 +66,9 @@ Add `service apache2 start` in .zshrc file
 > code /etc/apache2
 * ports.conf - Port Configuration
 * /sites-enabled - Virtual Hosts
+
+---
+<br />
+
+#### <img src="https://img.shields.io/badge/PWS-blue"> Show Windows Port 80 ####
+> netstat ano | findstr :80
